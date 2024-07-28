@@ -5,10 +5,10 @@ use std::cmp::Ordering;
 fn main()
 {
     let secret_number = rand::thread_rng().gen_range(1..=100);
-    println!("The secret number is {secret_number}");
-    println!("Guess the number!\nPlease input your guess");
+    println!("Guess the number!");
     loop
     {
+	println!("Please input a number between 1 & 100:");
 	let mut guess = String::new();
 	io::stdin()
 	    .read_line(&mut guess)
