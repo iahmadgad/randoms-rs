@@ -3,8 +3,6 @@ use std::io::{
     Write
 };
 
-use split_first_char::SplitFirstChar;
-
 const VOWELS: [char; 5] = ['a', 'e', 'u', 'i', 'o'];
 
 fn main()
@@ -22,7 +20,7 @@ fn convert_string(s : &str) -> String
 
 fn convert_word(s: &str) -> String
 {
-    let (first_char, rest) = s.split_first_char().unwrap();
+    let (first_char, rest) = (s.chars().nth(0).unwrap(), s.get(1..).unwrap());
     if VOWELS.contains(&first_char)
     {
 	format!("{first_char}{rest}hay ")
