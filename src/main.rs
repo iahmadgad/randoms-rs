@@ -13,9 +13,14 @@ fn main()
     println!("median is: {}\nmode is: {}", get_median(&vec), get_mode(&vec));
 }
 
-fn get_median(vec: &Vec<i32>) -> i32
+fn get_median(vec: &Vec<i32>) -> f64
 {
-    vec[vec.len() / 2]
+    let mut sorted_vec = vec.clone();
+    sorted_vec.sort();
+    match sorted_vec.len() {
+	i if i % 2 == 0 => (sorted_vec[i / 2] + sorted_vec[i / 2 - 1]) as f64 / 2.0,
+	i => sorted_vec[i / 2] as f64
+    }
 }
 
 fn get_mode(vec: &Vec<i32>) -> i32
