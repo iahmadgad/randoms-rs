@@ -1,0 +1,5 @@
+[workspace]
+
+members = ["hello-world", "one-operation-calculator", "guessing-game", "temprature", "fibonacci", "rock-paper-scissors", "median-and-mode", "pig-latin"]
+
+resolver = "2"
