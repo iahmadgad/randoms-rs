@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦀 Rust Randoms</title>
+    <script src="crates.js"></script> <!-- Include the data.js file -->
+    <script>
+        function generateList() {
+            const listContainer = document.getElementById('crates');
+            window.ALL_CRATES.forEach(item => {
+                listItem = document.createElement('li');
+                link = document.createElement('a');
+                link.href = `/randoms-rs/${item}/`;
+                link.textContent = item;
+                listItem.appendChild(link);
+                listContainer.appendChild(listItem);
+            });
+        }
+
+        window.onload = generateList;
+    </script>
+</head>
+<body style="background-color:dimgrey; color:white">
+    <tt>
+      <h1>🦀 Rust Randoms</h1>
+      <p>📦 Crates: </p>
+    <ul id="crates">
+        <!-- List will be generated here -->
+    </ul>
+    </tt>
+</body>
+</html>
