@@ -1,5 +1,4 @@
-pub enum Mode
-{
+pub enum Mode {
     Singleplayer,
-    Multiplayer(String, String)
+    Multiplayer(String, String),
 }
