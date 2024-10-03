@@ -1,4 +1,4 @@
-//! > Rock Paper Scissors written in Rust
+//! > Rock Paper Scissors
 //! # Guide
 //! firstly run this crate via cargo:
 //! ```sh
@@ -13,9 +13,10 @@
 //! input: 
 //! ```
 //! Type `1` for singleplayer or `2` for multiplayer.
-//! //! If you chose multiplayer it will prompt you for player names:
+//! If you chose multiplayer it will prompt you for player names:
 //! ```sh
-//! player: 
+//! Enter first player name:
+//! Enter second player name:
 //! ```
 //! then it will prompt you for max points number:
 //! ```sh
