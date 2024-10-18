@@ -12,7 +12,7 @@ fn main() {
     let temperature: f64 = temperature
         .trim()
         .parse()
-        .expect("Error parsing tempareture");
+        .expect("Error parsing temperature");
 
     print!("Type unit (possible values are c & f): ");
     let mut unit = String::new();
