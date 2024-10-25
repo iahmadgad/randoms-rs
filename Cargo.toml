@@ -1,5 +1,5 @@
 [workspace]
 
-members = ["one-operation-calculator", "guessing-game", "temperature", "fibonacci", "rock-paper-scissors", "median-and-mode", "pig-latin"]
+members = ["one-operation-calculator", "temperature", "fibonacci", "rock-paper-scissors", "median-and-mode", "pig-latin"]
 
 resolver = "2"
